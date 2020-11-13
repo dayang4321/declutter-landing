@@ -1,0 +1,121 @@
+/* Global Styles (styles that affect the entire document) are set here */
+
+/* Poppins Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+/* Default Variables */
+:root{
+    --dark-color: #000000;
+    --primary-color: #067BC2;
+    --secondary-color: #ECC30B;
+    --light-color: #FFFFFF; 
+
+    --main-font-family: 'Roboto', sans-serif;
+
+    --h1-font-size: 96px;
+    --h2-font-size: 70px;
+    --h3-font-size: 36px;
+    --h4-font-size: 30px;
+    --sub-heading-font-size: 24px;
+    --body-text-font-size: 18px;
+    --small-text-font-size: 8px;
+}
+
+html{
+    scroll-behavior: smooth!important;
+    overflow-x: hidden;
+}
+
+body {  
+    background-color: #ffffff;
+    font-family: var(--main-font-family);
+    color:  var(--light-color);
+    position: relative;
+    font-size: var(--body-text-font-size);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+h4 {
+    font-size: var(--sub-heading-font-size);
+}
+
+.heading{
+ font-weight: bold;
+ letter-spacing: -5.5%;
+}
+
+.navbar-brand{
+    font-size: var(--sub-heading-font-size);
+}
+
+.home-container{
+    background-color: var(--secondary-color);
+    padding: 78px 0px 120px 0px;
+}
+
+#signupForm{
+    width: 371px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 5px solid #000000;
+border-radius: 10px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 3px;
+    color: var(--dark-color);
+    font-family: 'Public Sans';
+font-weight: 600;
+margin-left: 24px;
+}
+.custom-select {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    /* background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right .75rem center/8px 10px; */
+     background: #fff url(../img/svg/select-arrow.svg) no-repeat right .75rem center/8px 10px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 5px solid #000000;
+}
+
+.form-control ~ .btn{
+    border-radius: 10px;
+}
+
+.about{
+    background-color: var(--primary-color);
+}
