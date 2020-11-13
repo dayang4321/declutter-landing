@@ -12,7 +12,8 @@
     --secondary-color: #ECC30B;
     --light-color: #FFFFFF; 
 
-    --main-font-family: 'Roboto', sans-serif;
+    --main-font-family: 'Roboto', Helvetica, Arial , sans-serif;
+    --second-font-family: 'Public Sans','Roboto', Helvetica, Arial  sans-serif;
 
     --h1-font-size: 96px;
     --h2-font-size: 70px;
@@ -61,11 +62,19 @@ h6 {
 
 .heading{
  font-weight: bold;
- letter-spacing: -5.5%;
- line-height: 1.16;
+ letter-spacing: -0.05em;
+}
+
+.light-heading{
+    font-weight: 500;
+    letter-spacing: -0.05em;
 }
 
 .navbar-brand{
+    font-size: var(--h3-font-size);
+}
+
+.navbar-brand span{
     font-size: var(--sub-heading-font-size);
 }
 
@@ -99,7 +108,7 @@ label{
     display: inline-block;
     margin-bottom: 3px;
     color: var(--dark-color);
-    font-family: 'Public Sans';
+    font-family: var(--second-font-family);
 font-weight: 600;
 margin-left: 24px;
 }
@@ -151,4 +160,10 @@ min-width: 1143px;
 
 .testimonial-title{
     font-weight: 500;
+}
+
+
+.copyright{
+    font-family: var(--second-font-family);
+    letter-spacing: 0.02em;
 }
