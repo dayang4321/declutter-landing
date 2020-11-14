@@ -74,11 +74,11 @@ h6 {
 }
 
 .navbar-brand{
-    font-size: var(--h3-font-size);
+    font-size: 48px;
 }
 
 .navbar-brand span{
-    font-size: var(--sub-heading-font-size);
+    font-size: 24px;
 }
 
 .home-container{
@@ -130,7 +130,7 @@ text-align: center;
 }
 
 #signupForm{
-    width: 371px;
+  max-width: 371px;
 }
 
 .form-control {
@@ -230,7 +230,7 @@ min-width: 1143px;
 @media (max-width:767px) {
     :root{
         --h1-font-size: min(max(36px, 8.6956vw), 56px);
-        --h2-font-size: min(max(32px,  8.6956vw), 48px);
+        --h2-font-size: min(max(30px,  8.6956vw), 48px);
         --h3-font-size: min(max(28px, 3.3333vw), 48px);
         --h4-font-size: min(max(24px, 2.5vw), 36px);
         --h5-font-size: min(max(16px, 4.3478vw), 28px);
@@ -240,7 +240,7 @@ min-width: 1143px;
     }
 
     .heading-span{
-        padding: 8px 12.077vw;
+        padding: 8px 12.077vw 8px 2.2895vw;
         width: 100%;
         margin-bottom: -2px;
     } 
@@ -248,7 +248,7 @@ min-width: 1143px;
     .middle-span{
         width: 92.89%;
         margin-left: 2.8985vw;
-        padding: 8px calc(12.077vw - 2.8985vw) 8px  2.8985vw ;
+        padding: 8px calc(12.077vw - 2.8985vw) 8px 0px ;
     }
     
     .bottom-span{
