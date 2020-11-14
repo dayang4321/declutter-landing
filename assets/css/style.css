@@ -14,7 +14,7 @@
     --main-font-family: 'Roboto', Helvetica, Arial , sans-serif;
     --second-font-family: 'Public Sans','Roboto', Helvetica, Arial  sans-serif;
 
-    --h1-font-size: min(max(64px, 6.6667vw), 96px);
+    --h1-font-size: min(max(56px, 6.6667vw), 96px);
     --h2-font-size: min(max(48px, 4.8611vw), 70px);
     --h3-font-size: 48px;
     --h4-font-size: 36px;
@@ -95,8 +95,8 @@ h6 {
 }
 
 .middle-span{
-    margin-left: -92px;
-    padding-right: calc(9vw - 92px);
+    margin-left: -6.38vw;
+    padding-right: calc(9vw - 6.38vw);
 }
 
 .bottom-span{
