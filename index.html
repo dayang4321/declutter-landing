@@ -35,7 +35,7 @@
           <!-- Navbar Links -->
           <ul class="navbar-nav nav ml-auto mr-xl-5 mr-lg-4 mr-md-3 mr-2">
             <li class="nav-item my-3 my-md-0  px-xl-3 px-1 ">
-              <a class="nav-link " href="#home">Signup</a>
+              <a class="nav-link" href="#home">Signup</a>
             </li>
             <li class="nav-item  my-3 my-md-0 px-xl-3 px-1">
               <a class="nav-link" href="#about">About</a>
@@ -57,16 +57,25 @@
       <div class="row mb-5 ">
         <div class="col-7 ml-auto">
           <h2 class="heading">
-            <span class="bg-dark">
-              Buy anything you low prices
+            <span class="heading-span bg-dark">
+              Buy anything you
             </span>
-              <span class="bg-dark">
+              <span class="heading-span middle-span bg-dark">
                 need at ridiculously
                 </span>
-                <span class="bg-dark">
+                <span class="heading-span bottom-span bg-dark">
               low prices
                   </span>
-          </h2>         
+          </h2>     
+          <div class="bg-dark countdown pt-5 pb-4 mt-n2">
+            <h6 class="mb-4 light-heading font-weight-normal">Website Launch</h6>
+            <div class="clock cd100 mb-3">
+             <span class="clock-slot"> <span class="days"> 12</span> <label>Days</label> </span> : <span class="clock-slot">  <span class="hours"> 13</span> <label>Hours</label> </span> :
+             <span class="clock-slot"> <span class="minutes"> 45</span> <label>Minutes</label> </span> : <span class="clock-slot"> <span class="seconds"> 56</span> <label>Seconds</label></span>
+           
+            </div>
+
+          </div>    
         </div>       
       </div>
       <div class="row">
@@ -241,5 +250,24 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>  
+<script src="assets/js/countdowntime/moment.min.js"></script>
+<script src="assets/js/countdowntime/moment-timezone.min.js"></script>
+<script src="assets/js/countdowntime/moment-timezone-with-data.min.js"></script>
+<script src="assets/js/countdowntime/countdowntime.js"></script>
+<script>
+  $('.cd100').countdown100({
+    /*Set Endtime here*/
+    /*Endtime must be > current time*/
+    endtimeYear: 2020,
+    endtimeMonth: 11,
+    endtimeDate: 26,
+    endtimeHours: 18,
+    endtimeMinutes: 0,
+    endtimeSeconds: 0,
+    timeZone: "" 
+    // ex:  timeZone: "America/New_York"
+    //go to " http://momentjs.com/timezone/ " to get timezone
+  });
+</script>
 </body>
 </html>
