@@ -13,6 +13,19 @@
     //go to " http://momentjs.com/timezone/ " to get timezone
   });
 
+  
+
+$(document).ready(function () {
+    $('.testimonial-slider').slick({
+        dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
+    });
+  });   
+
 
 // if ($('#formCheck')[0].checked) { $('.custom-checkbox').fadeOut() }
   
