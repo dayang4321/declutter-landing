@@ -18,6 +18,9 @@
 $(document).ready(function () {
     $('.testimonial-slider').slick({
         dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        adaptiveHeight: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
