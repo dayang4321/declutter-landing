@@ -271,12 +271,25 @@ border-radius: 22px;
     background-repeat: no-repeat;
     border: none;
     z-index: 1;
+    opacity: 0.4;
+}
+
+.slider-contents:hover .slider-prev,
+.slider-contents:hover .slider-next {
+    opacity: 1;
+    transition: opacity linear 0.25s;
+ 
 }
 
 .slider-prev:hover,
 .slider-next:hover{
     transform: scale(1.06);
     transition: transform li6near 0.25s;
+}
+
+.slider-prev:focus,
+.slider-next:focus{
+    outline: none
 }
 
 .slider-prev{
@@ -290,6 +303,10 @@ border-radius: 22px;
 
 .team-card {
     padding: 0 8px;
+}
+
+.team-card img{
+    border-radius: 33px;
 }
 
 .copyright{
