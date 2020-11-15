@@ -309,6 +309,11 @@ border-radius: 22px;
     border-radius: 33px;
 }
 
+.contact{
+    font-size: var(--sub-heading-font-size);
+    font-family: var(--second-font-family);
+}
+
 .copyright{
     font-family: var(--second-font-family);
     letter-spacing: 0.02em;
