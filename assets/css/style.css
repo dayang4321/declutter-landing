@@ -163,7 +163,7 @@ font-size: 14px;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
-#signupForm label{
+#signupForm label:not(.custom-control-label){
     display: inline-block;
     margin-bottom: 3px;
     color: var(--dark-color);
@@ -186,9 +186,50 @@ margin-left: 24px;
     border: 5px solid #000000;
 }
 
+.custom-control-label::after {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 25px;
+    height: 25px;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+    
+}
 
-.form-control ~ .btn{
+.custom-checkbox .custom-control-label::before {
+    border-radius: 5px;
+}
+
+.custom-control-label span{
+    color: black;
+    margin-left: 26px;
+    font-family: var(--second-font-family);
+    font-weight: 600;
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    display: block;
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
+
+.submit-btn{
     border-radius: 10px;
+}
+
+.submit-btn:hover{
+    transform: scale(1.025);
+    transition: transform linear 0.25s;
 }
 
 .about{
