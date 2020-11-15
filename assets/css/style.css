@@ -284,6 +284,10 @@ min-width: 1143px;
     min-width: 515px;    
     }
 
+    .testimonial-card img{
+        width: 50%;
+    }
+
     .testimonial-card h3{
         font-size: var(--h5-font-size);
     }
