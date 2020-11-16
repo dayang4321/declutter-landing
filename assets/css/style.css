@@ -98,14 +98,9 @@ color: var(--secondary-color)!important;
     max-width: 1440px!important;
 }
 
-.countdown{
-    /* margin-left: 92px;
-    padding-left: 9vw; */
-}
-
 .clock{
     font-size: min(max(56px, 5.5556vw), 80px);
-    margin-top: -120px;
+    margin-top: -125px;
 }
 
 .clock-slot{
@@ -126,6 +121,13 @@ text-align: center;
 
 #signupForm{
   max-width: 371px;
+}
+
+.black-layer1{
+    margin-right: -36px;
+}
+.black-layer2{
+    margin-left: -72px;
 }
 
 .form-control {
@@ -199,7 +201,7 @@ margin-left: 24px;
 
 .custom-control-label span{
     color: black;
-    margin-left: 26px;
+    margin-left: 23px;
     font-family: var(--second-font-family);
     font-weight: 600;
 }
@@ -330,6 +332,11 @@ border-radius: 22px;
         --small-text-font-size: 8px;
     }
 
+    .home-container{
+        background-color: var(--secondary-color);
+        padding: 0px 0px 40px 0px;
+    }
+
     .heading-span{
         padding: 8px 12.077vw 8px 2.2895vw;
         width: 100%;
@@ -348,15 +355,18 @@ border-radius: 22px;
     }
 
     .clock{
-        font-size: min(max(36px, 11.594vw), 56px);
+        overflow-x: visible;
+    font-size: min(max(36px, 11.594vw), 56px);
+    white-space: nowrap;
     }
-
-    .countdown{
+    
+    .black-layer1{
+        margin-right: 0px;
+    }
+    .black-layer2{
         margin-left: 0px;
-        padding-left: 9vw;
     }
-
-    .info-card{
+     .info-card{
         min-width: 241px;
         min-height: 381px;
         border: 11px solid #FFFFFF;
