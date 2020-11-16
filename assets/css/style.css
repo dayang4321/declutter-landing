@@ -438,41 +438,63 @@ border-radius: 22px;
 
 
 .pos1 {
-    top: 40px;
-    left: -0px;
+    top: 7.9vh;
+    left: 1vw;
+    max-height: 250px;
 }
 
 .pos2 {
-    top: 546px;
-    left: 575px;
+    top: 572px;
+    left: 2vw;
 }
 
 .pos3 {
-    top: 572px;
-    left: -8px;
+    top: 600px;
+    left: 39vw;
+    max-width: 200px;
 }
 
-.pos4 {
-    top: 751px;
-    left: 1221px;
+.pos4{
+    top: 791px;
+    left: 85.5vw;
 }
 
 .pos5 {
-    top: 1126px;
-    left: 70px;
+    max-width: 350px;
+    top: 1146px;
+    left: 5vw;
 }
+
 .pos6 {
-    top: 1078px;
-    left: 960px;
+    top: 1124px;
+    left: 70.14vw;
+    max-width: 480px;
 }
 
-.pos7 {
-    top: 2186px;
-    left: 100px;
+.pos7{
+    max-height: 280px;
+    left:3vw;
+    top: 1775px;
+    transform: rotate(29.07deg);
 }
 
-.pos8 {
-    top: 2037px;
-    left: 970px;
+.pos8{
+    left: 83.6vw;
+    top: 1449px;
+    transform: rotate(25.19deg);
+}
+
+.pos9{
+    left: 2vw;
+    top: 2183px;
+    transform: rotate(29.52deg);
+}
+
+.pos10{
+    left: 1066px;
+    top: 2112px;
+    transform: rotate(-10deg);
+    max-width: 500px;
+    max-height: 450px;
 }
 
