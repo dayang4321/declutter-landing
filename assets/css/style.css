@@ -101,6 +101,7 @@ color: var(--secondary-color)!important;
 .clock{
     font-size: min(max(56px, 5.5556vw), 80px);
     margin-top: -125px;
+    margin-left: 60px;
 }
 
 .clock-slot{
@@ -358,6 +359,8 @@ border-radius: 22px;
         overflow-x: visible;
     font-size: min(max(36px, 11.594vw), 56px);
     white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
     }
     
     .black-layer1{
