@@ -438,14 +438,14 @@ border-radius: 22px;
 
 
 .pos1 {
-    top: 7.9vh;
+    top: 75px;
     left: 1vw;
     max-height: 250px;
 }
 
 .pos2 {
     top: 572px;
-    left: 2vw;
+    left: 1.5vw;
 }
 
 .pos3 {
@@ -466,14 +466,14 @@ border-radius: 22px;
 }
 
 .pos6 {
-    top: 1124px;
+    top: 1068px;
     left: 70.14vw;
     max-width: 480px;
 }
 
 .pos7{
     max-height: 280px;
-    left:3vw;
+    left:-3vw;
     top: 1775px;
     transform: rotate(29.07deg);
 }
@@ -491,7 +491,7 @@ border-radius: 22px;
 }
 
 .pos10{
-    left: 1066px;
+    left: 74vw;
     top: 2112px;
     transform: rotate(-10deg);
     max-width: 500px;
