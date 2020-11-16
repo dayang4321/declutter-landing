@@ -91,7 +91,7 @@ color: var(--secondary-color)!important;
 
 .home-container{
     background-color: var(--secondary-color);
-    padding: 78px 0px 30px 0px;
+    padding: 128px 0px 30px 0px;
 }
 
 .home-container .container-fluid{
@@ -415,36 +415,44 @@ border-radius: 22px;
 
  }
 
+ @media (max-width:992px) { 
+    .animation-container{
+     display:none
+    }
+ }
+
 
 .animation-container{
     position: relative;
     z-index: 1;
-    top: -130px;
+    top: -180px;
 }
 
 .animation-img{
     position: absolute;
+    max-width: 300px;
+    max-height: 400px;
 }
 
 
 .pos1 {
-    top: 58px;
-    left: -50px;
+    top: 40px;
+    left: -0px;
 }
 
 .pos2 {
-    top: 286px;
-    left: 254px;
+    top: 546px;
+    left: 575px;
 }
 
 .pos3 {
     top: 572px;
-    left: 6px;
+    left: -8px;
 }
 
 .pos4 {
-    top: 921px;
-    left: 1253px;
+    top: 751px;
+    left: 1221px;
 }
 
 .pos5 {
@@ -452,7 +460,17 @@ border-radius: 22px;
     left: 70px;
 }
 .pos6 {
-    top: 2178px;
-    left: 1133px;
+    top: 1078px;
+    left: 960px;
+}
+
+.pos7 {
+    top: 2186px;
+    left: 100px;
+}
+
+.pos8 {
+    top: 2037px;
+    left: 970px;
 }
 
