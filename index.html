@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,126 +18,166 @@
 <link rel="stylesheet" href="./assets/css/style.css">
     <title>Declutter</title>
 </head>
+
 <body>
-  
-     
-<header>
+
+
+  <header>
     <!-- Navbar -->
-    <nav  class="navbar justify-content-center navbar-expand-md navbar-dark bg-dark shadow-none px-3 px-lg-4 px-xl-5" id="home-navbar">
+    <nav class="navbar justify-content-center navbar-expand-md navbar-dark bg-dark shadow-none px-3 px-lg-4 px-xl-5"
+      id="home-navbar">
 
       <!-- Navbar Logo and Toogle Button -->
       <div class="d-flex justify-content-md-between   logo-button">
-        <a class="navbar-brand heading text-center text-md-left px-xl-5 px-lg-4 px-md-3 px-2 wow zoomIn " data-wow-duration="1.5s" href="#" id="brand">declutter.<span>ng</span></a>
+        <a class="navbar-brand heading text-center text-md-left px-xl-5 px-lg-4 px-md-3 px-2 wow zoomIn "
+          data-wow-duration="1.5s" href="#" id="brand">declutter.<span>ng</span></a>
         <!-- <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> -->
-          <span class="bar"></span>
+        <span class="bar"></span>
         </button>
       </div>
-      
+
       <!-- Collapsible Content -->
-        <div class="collapse navbar-collapse" id="navbarText">
-          <!-- Navbar Links -->
-          <ul class="navbar-nav nav ml-auto mr-xl-5 mr-lg-4 mr-md-3 mr-2">
-            <li class="nav-item my-3 my-md-0  px-xl-3 px-1 ">
-              <a class="nav-link" href="#home">Signup</a>
-            </li>
-            <li class="nav-item  my-3 my-md-0 px-xl-3 px-1">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item my-3 my-md-0  px-xl-3 px-1">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
-            </li>
-          </ul> 
-        </div>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <!-- Navbar Links -->
+        <ul class="navbar-nav nav ml-auto mr-xl-5 mr-lg-4 mr-md-3 mr-2">
+          <li class="nav-item my-3 my-md-0  px-xl-3 px-1 ">
+            <a class="nav-link" href="#home">Signup</a>
+          </li>
+          <li class="nav-item  my-3 my-md-0 px-xl-3 px-1">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item my-3 my-md-0  px-xl-3 px-1">
+            <a class="nav-link" href="#testimonial">Testimonials</a>
+          </li>
+        </ul>
+      </div>
       <!-- /Collapsible Content -->
 
     </nav>
     <!-- /Navbar -->
 
     <!-- Home -->
-    
+
     <section class="home-container d-block pt-5" id="home">
+      <div class="container-fluid">
 
-      <div class="row mb-5 ">
-        <div class="col-11 col-md-9 col-lg-8 col-xl-7 mr-auto ml-auto mr-md-0  ml-md-auto">
-          <h2 class="heading">
-            <span class="heading-span bg-dark">
-              Buy anything you
-            </span>
-              <span class="heading-span middle-span bg-dark">
-                need at ridiculously
-                </span>
-                <span class="heading-span bottom-span bg-dark">
-              low prices
-                  </span>
-          </h2>     
-          <div class="bg-dark countdown pt-5 pb-4 mt-n2">
-            <h6 class="mb-4 light-heading font-weight-normal">Sales start in</h6>
-            <div class="clock cd100 mb-3">
-             <span class="clock-slot"> <span class="days"> 12</span> <label>Days</label> </span> : <span class="clock-slot">  <span class="hours"> 13</span> <label>Hours</label> </span> :
-             <span class="clock-slot"> <span class="minutes"> 45</span> <label>Minutes</label> </span> : <span class="clock-slot"> <span class="seconds"> 56</span> <label>Seconds</label></span>
-           
+        <div class="row px-3">
+          <div class="col-xl-7 col-md-6 pt-5 col-12 py-4 mt-5">
+            <h2 class="text-dark heading text-center text-md-right">
+              Buy anything you need at ridiculously low prices
+            </h2>
+          </div>
+          <div class="col-xl-5 ml-md-n4 col-md-6">
+            <h5 class="text-dark font-weight-bolder text-center mb-2">Be the first to find products you need</h5>
+            <!-- Default form contact -->
+            <form class="mx-auto mx-md" action="#!" id="signupForm">
+  
+              <!-- Name -->
+              <label>Name</label>
+              <input type="text" id="" class="form-control mb-4">
+  
+              <!-- State -->
+              <label>State</label>
+              <select class="browser-default custom-select mb-4">
+                <option value="" disabled>Select your state</option>
+                <option value="1">Lagos</option>
+                <option value="2">Ogun</option>
+                <option value="2">Ondo</option>
+                <option value="2">Osun</option>
+              </select>
+  
+              <!-- Email -->
+              <label>Email Address</label>
+              <input type="email" id="" class="form-control mb-4">
+  
+              <!-- Message -->
+              <div class="form-group">
+                <label>What items are you interested in?</label>
+                <textarea class="form-control" id="" rows="1"
+                  placeholder="Ox standing fan, Living room couch."></textarea>
+              </div>
+              <div class="form-group itemsForSale" style="display: none;">
+                <label>What items do you want to sell?</label>
+                <textarea class="form-control" id="" rows="1"
+                  placeholder="Ox standing fan, Living room couch."></textarea>
+              </div>
+  
+              <!-- Copy -->
+              <div class="custom-control custom-checkbox mb-4">
+                <input type="checkbox" class="custom-control-input" id="formCheck">
+                <label class="custom-control-label" for="formCheck">I have stuff to sell</label>
+              </div>
+  
+              <!-- Send button -->
+              <button class="btn btn-dark btn-block text-capitalize" type="submit">Done</button>
+  
+            </form>
+            <!-- Default form contact -->
+          </div>
+  
+  
+  
+        </div>
+        <div class="row mb-5 ">
+         
+            <div class="countdown col-11 col-md-9 col-lg-8 col-xl-7 mx-auto pt-5 pb-4">
+              <div class="col-12  bg-dark py-5">&nbsp;</div>
+              <div class="py-5 bg-dark col-12">&nbsp;</div>
+              <div class="clock pl-5 pb-5  bg-dark col-10 mx-auto cd100 mb-3">
+                <h6 class="bg-dark col-12 pb-3 pl-5 light-heading font-weight-normal text-left">Sales start in</h6>
+                <div class="pl-5 pb-5">
+                  <span class="clock-slot"> <span class="days"> 12</span> <label>Days</label> </span> : <span
+                  class="clock-slot"> <span class="hours"> 13</span> <label>Hours</label> </span> :
+                <span class="clock-slot"> <span class="minutes"> 45</span> <label>Minutes</label> </span> : <span
+                  class="clock-slot"> <span class="seconds"> 56</span> <label>Seconds</label></span>
+                </div>
+  
+              </div>
+  
             </div>
-
-          </div>    
-        </div>       
+        </div>
       </div>
-      <div class="row  container-xl mx-auto px-3">
-        <div class="col-xl-7 col-md-6 col-12 py-4 mt-5">
-          <div class="col-12 col-lg-10 col-xl-9 ml-auto">
-            <h1 class="text-dark heading text-center text-md-left">
-              Be the first to find products you need
-            </h1> 
-          </div>         
-      </div> 
-      <div class="col-xl-5 ml-md-n4 col-md-6">
-        <!-- Default form contact -->
-<form class="mx-auto mx-md" action="#!" id="signupForm">
-
-  <!-- Name -->
- <label>Name</label>
-  <input type="text" id="" class="form-control mb-4" >
-
-   <!-- State -->
-     <label>State</label>
-  <select class="browser-default custom-select mb-4">
-      <option value="" disabled>Select your state</option>
-      <option value="1">Lagos</option>
-    <option value="2">Ogun</option>
-      <option value="2">Ondo</option>
-     <option value="2">Osun</option>
-  </select>
-
-  <!-- Email -->
-  <label>Email Address</label>
-  <input type="email" id="" class="form-control mb-4">
-
-  <!-- Message -->
-  <div class="form-group">
-      <label>What items are you interested in?</label>
-      <textarea class="form-control mb-4" id="" rows="1" placeholder="Ox standing fan, Living room couch."></textarea>
-  </div>
-   <div class="form-group mb-4 itemsForSale" style="display: none;">
-      <label>What items do you want to sell?</label>
-      <textarea class="form-control" id="" rows="1" placeholder="Ox standing fan, Living room couch."></textarea>
-  </div>
-
-  <!-- Copy -->
-  <div class="custom-control custom-checkbox mb-4">
-      <input type="checkbox" class="custom-control-input" id="formCheck">
-      <label class="custom-control-label" for="formCheck"><span>I have stuff to sell</span></label>
-  </div>
-
-  <!-- Send button -->
-  <button class="submit-btn btn btn-dark btn-block text-capitalize shadow-none" type="submit">Get Started</button>
-
-</form>
-<!-- Default form contact -->
-      </div> 
 
 
 
+    </section>
+    <!-- /Home -->
+
+  </header>
+  <main>
+    <section class="about py-4 py-xl-5" id="about">
+      <div class="container-xl py-5">
+        <h1 class="heading col-12 col-md-6 text-center text-md-left  mr-auto">
+          Why use Declutter
+        </h1>
+        <div class="my-5 d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div class="info-card px-4 d-flex flex-column justify-content-center text-center">
+            <img class="img-fluid" src="assets/img/svg/secure.svg" alt="Padlock" />
+            <h5 class="heading mb-2 mt-5">Safe and Secure payment</h5>
+            <p class="">
+              All your payments are safely held in Escrow for 48 hours while
+              you confirm the products delivered to you is satisfactory
+            </p>
+          </div>
+          <div class="info-card px-4 d-flex flex-column justify-content-center text-center">
+            <img class="img-fluid" src="assets/img/svg/nairadown.svg" alt="Naira going down" />
+            <h5 class="heading mb-2 mt-5">Lowest Price in the Market</h5>
+            <p class="">
+              Products listed on Declutter are all priced way below the market prices becasue
+              they are sold by real humans who want to sell off this items quickly.
+            </p>
+          </div>
+          <div class="info-card px-4 d-flex flex-column justify-content-center text-center">
+            <img class="img-fluid" src="assets/img/svg/safetick.svg" alt="Padlock" />
+            <h5 class="heading mb-2 mt-5">Verified Products Only</h5>
+            <p class="">
+              Before a product is listed it is properly checked to ensure it meets up to
+              its expectation. No lies... No gimmicks.
+            </p>
+          </div>
+
+        </div>
       </div>
-     
 
     </section>
     <!-- /Home -->
@@ -228,7 +269,7 @@
         <button class="slider-next"></button>
       </div>
 
-    </div>
+      </div>
 
   </section>
   <section class="bg-dark pt-md-5 pt-4">
@@ -283,4 +324,5 @@
 <script src="assets/js/countdowntime/countdowntime.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
+
 </html>
