@@ -89,7 +89,7 @@ gsap.registerEffect({
 //gsap.effects.fade(".box");
 
     let timeline = gsap.timeline()
-timeline.fade('.pos1', { duration: 2, delay: 1.5, })
+timeline.fade('.pos1', { duration: 2, delay: 5, })
 timeline.fade('.pos2', { duration: 2, delay: 1.5, })
 timeline.fade('.pos3', { duration: 2, delay: 1.5, })
 timeline.fade('.pos4', { duration: 2, delay: 1.5, })
