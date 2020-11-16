@@ -415,3 +415,45 @@ border-radius: 22px;
     
 
  }
+
+
+.animation-container{
+    position: relative;
+    z-index: 1;
+    top: -130px;
+}
+
+.animation-img{
+    position: absolute;
+}
+
+
+.pos1 {
+    top: 58px;
+    left: -50px;
+}
+
+.pos2 {
+    top: 286px;
+    left: 254px;
+}
+
+.pos3 {
+    top: 572px;
+    left: 6px;
+}
+
+.pos4 {
+    top: 921px;
+    left: 1253px;
+}
+
+.pos5 {
+    top: 1126px;
+    left: 70px;
+}
+.pos6 {
+    top: 2178px;
+    left: 1133px;
+}
+
