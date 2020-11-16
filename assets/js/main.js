@@ -5,10 +5,10 @@
     endtimeYear: 2020,
     endtimeMonth: 11,
     endtimeDate: 26,
-    endtimeHours: 18,
+    endtimeHours: 9,
     endtimeMinutes: 0,
     endtimeSeconds: 0,
-    timeZone: "" 
+    timeZone: "Africa/Lagos" 
     // ex:  timeZone: "America/New_York"
     //go to " http://momentjs.com/timezone/ " to get timezone
   });
