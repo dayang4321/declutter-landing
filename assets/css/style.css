@@ -367,6 +367,12 @@ border-radius: 22px;
         border-radius: 30px;
     }
     
+    .custom-control-label::before {
+        top: -3.3px;
+    }
+    .custom-control-label span{  
+        margin-left: 18px;
+    }
     
     .info-card:not(:first-of-type){
         margin-top: 40px;
@@ -409,7 +415,24 @@ border-radius: 22px;
 
  
  @media (max-width:992px) { 
-  
+    .custom-control-label::before {
+        top: -2.5px;
+    }
+    .custom-control-label span{  
+        margin-left: 20px;
+    }
+    
  }
 
+  
+ @media (max-width:500px) { 
+    .custom-control-label::before {
+        top: -3.3px;
+    }
+    .custom-control-label span{  
+        margin-left: 16px;
+    }
+ }
+
+ 
 
