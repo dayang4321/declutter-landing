@@ -91,17 +91,20 @@ color: var(--secondary-color)!important;
 
 .home-container{
     background-color: var(--secondary-color);
-    padding: 78px 0px 30px 0px;
 }
 
 .home-container .container-fluid{
     max-width: 1440px!important;
 }
 
+.hero-bg{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/assets/img/png/hero.png) center center;
+    background-size: cover;
+    padding: 78px 0px 86px 0px;
+}
+
 .clock{
     font-size: min(max(56px, 5.5556vw), 80px);
-    margin-top: -125px;
-    margin-left: 60px;
 }
 
 .clock-slot{
@@ -124,13 +127,6 @@ text-align: center;
   max-width: 371px;
 }
 
-.black-layer1{
-    margin-right: -36px;
-}
-.black-layer2{
-    margin-left: -72px;
-}
-
 .form-control {
     display: block;
     width: 100%;
@@ -138,10 +134,10 @@ text-align: center;
     /* height: calc(1.5em + .75rem + 2px); */
     padding: .375rem .75rem;
     line-height: 1.5;
-    color: #000000;
+    color: var(--light-color);
     background-color: transparent;
     background-clip: padding-box;
-    border: 5px solid #000000;
+    border: 5px solid var(--light-color);
     border-radius: 10px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -149,12 +145,12 @@ text-align: center;
 .form-control::placeholder{
     font-family: var(--second-font-family);
 font-style: italic;
-color: var(--dark-color);
+color: var(--light-color);
 font-size: 14px;
 }
 
 .form-control:focus {
-    color: #000000;
+    color: var(--light-color);
     background-color:transparent;
     border-color: #80bdff;
     outline: 0;
@@ -164,7 +160,7 @@ font-size: 14px;
 #signupForm label:not(.custom-control-label){
     display: inline-block;
     margin-bottom: 3px;
-    color: var(--dark-color);
+    color: var(--light-color);
     font-family: var(--second-font-family);
 font-weight: 600;
 margin-left: 24px;
@@ -176,12 +172,12 @@ margin-left: 24px;
     padding: .375rem 1.75rem .375rem .75rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #000000;
+    color: var(--light-color);
     /* background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right .75rem center/8px 10px; */
      background: #fff url(../img/svg/select-arrow.svg) no-repeat right .75rem center/8px 10px;
     border-radius: 10px;
     background-color: transparent;
-    border: 5px solid #000000;
+    border: 5px solid var(--light-color);
 }
 
 .custom-control-label::after {
@@ -201,7 +197,7 @@ margin-left: 24px;
 }
 
 .custom-control-label span{
-    color: black;
+    color: var(--light-color);
     margin-left: 23px;
     font-family: var(--second-font-family);
     font-weight: 600;
@@ -223,11 +219,13 @@ margin-left: 24px;
 
 .submit-btn{
     border-radius: 10px;
+    border: 3px solid var(--light-color);
 }
 
 .submit-btn:hover{
     transform: scale(1.025);
-    transition: transform linear 0.25s;
+    border: 3px solid var(--light-color);
+    transition: all linear 0.25s;
 }
 
 .about{
@@ -333,8 +331,7 @@ border-radius: 22px;
         --small-text-font-size: 8px;
     }
 
-    .home-container{
-        background-color: var(--secondary-color);
+    .hero-bg{
         padding: 0px 0px 40px 0px;
     }
 
@@ -363,12 +360,6 @@ border-radius: 22px;
     margin-right: auto;
     }
     
-    .black-layer1{
-        margin-right: 0px;
-    }
-    .black-layer2{
-        margin-left: 0px;
-    }
      .info-card{
         min-width: 241px;
         min-height: 381px;
@@ -418,83 +409,7 @@ border-radius: 22px;
 
  
  @media (max-width:992px) { 
-    .animation-container{
-     display:none
-    }
+  
  }
 
-
-.animation-container{
-    position: relative;
-    z-index: 1;
-    top: -180px;
-}
-
-.animation-img{
-    position: absolute;
-    max-width: 300px;
-    max-height: 400px;
-}
-
-
-.pos1 {
-    top: 75px;
-    left: 1vw;
-    max-height: 250px;
-}
-
-.pos2 {
-    top: 572px;
-    left: 1.5vw;
-}
-
-.pos3 {
-    top: 600px;
-    left: 39vw;
-    max-width: 200px;
-}
-
-.pos4{
-    top: 791px;
-    left: 85.5vw;
-}
-
-.pos5 {
-    max-width: 350px;
-    top: 1146px;
-    left: 5vw;
-}
-
-.pos6 {
-    top: 1068px;
-    left: 70.14vw;
-    max-width: 480px;
-}
-
-.pos7{
-    max-height: 280px;
-    left:-3vw;
-    top: 1775px;
-    transform: rotate(29.07deg);
-}
-
-.pos8{
-    left: 83.6vw;
-    top: 1449px;
-    transform: rotate(25.19deg);
-}
-
-.pos9{
-    left: 2vw;
-    top: 2183px;
-    transform: rotate(29.52deg);
-}
-
-.pos10{
-    left: 74vw;
-    top: 2112px;
-    transform: rotate(-10deg);
-    max-width: 500px;
-    max-height: 450px;
-}
 
