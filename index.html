@@ -79,46 +79,60 @@
               Buy anything you need at ridiculously low prices
             </h2>
           </div>
-          <div class="col-xl-5 ml-md-n4 col-md-6">
+          <div class="form-content col-xl-5 ml-md-n4 col-md-6">
             <h5 class="text-dark font-weight-bolder text-center">Be the first to find products you need</h5>
+          
+          
             <!-- Default form contact -->
-            <form class="mx-auto mx-md" action="#!" id="signupForm">
+            <form class="mx-auto mx-md" novalidate id="signupForm">
   
               <!-- Name -->
-              <label>Name</label>
-              <input type="text" id="" class="form-control mb-4">
+              <div class="mb-4">
+                <label>Name</label>
+                <input type="text" id="contactName" class="form-control" required>
+                <div class="invalid-feedback">Please enter your name</div>
+              </div>
   
               <!-- State -->
-              <label>State</label>
-              <select class="browser-default custom-select mb-4">
-                <option value="" disabled>Select your state</option>
-                <option value="1">Lagos</option>
-                <option value="2">Ogun</option>
-                <option value="2">Ondo</option>
-                <option value="2">Osun</option>
-              </select>
+              <div class="mb-4">
+                <label>State</label>
+                <select id="contactState" class="browser-default custom-select" required> 
+                  <option value="" disabled>Select your state</option>
+                  <option value="1">Lagos</option>
+                  <option value="2">Ogun</option>
+                  <option value="2">Ondo</option>
+                  <option value="2">Osun</option>
+                </select>
+                <div class="invalid-feedback">Please select your state</div>
+              </div>
   
               <!-- Email -->
-              <label>Email Address</label>
-              <input type="email" id="" class="form-control mb-4">
+              <div class="mb-4">
+                <label>Email Address</label>
+                <input type="email" id="contactEmail" class="form-control" required>
+                <div class="invalid-feedback">Please enter your email</div>
+              </div>
 
-              <!-- Email -->
-              <label>Phone No.</label>
-              <input type="tel" id="" class="form-control mb-4">
+              <!-- Phone Number -->
+              <div class="mb-4">
+                <label>Phone No.</label>
+                <input type="tel" id="contactPhone" class="form-control">
+                <div class="invalid-feedback">Please enter your email</div>
+              </div>
   
               <!-- Message -->
-              <div class="form-group">
+              <div class="form-group mb-4">
                 <label>What items are you interested in?</label>
-                <textarea class="form-control mb-4" id="" rows="1"
+                <textarea class="form-control" id="contactInterested" rows="1"
                   placeholder="Ox standing fan, Living room couch."></textarea>
               </div>
-              <div class="form-group itemsForSale" style="display: none;">
+              <div class="form-group itemsForSale mb-4" style="display: none;">
                 <label>What items do you want to sell?</label>
-                <textarea class="form-control mb-4" id="" rows="1"
+                <textarea class="form-control" id="contactSelling"  rows="1"
                   placeholder="Ox standing fan, Living room couch."></textarea>
               </div>
   
-              <!-- Copy -->
+              <!-- CheckBox -->
               <div class="custom-control custom-checkbox mb-4">
                 <input type="checkbox" class="custom-control-input" id="formCheck">
                 <label class="custom-control-label" for="formCheck"><span>I have stuff to sell</span></label>
