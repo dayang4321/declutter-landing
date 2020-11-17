@@ -88,7 +88,7 @@ $("#formCheck").click(function(){
               $(".hero-title h2").fadeToggle(300);
               $('.form-content').fadeOut(300);
               $(".hero-title h2").html("We would be in touch with you very soon");
-              $(".hero-title").addClass('mx-auto');
+              $(".hero-title").removeClass('col-xl-7').addClass('mx-auto');
               $(".hero-title h2").fadeToggle(300);
            
           }
@@ -96,7 +96,7 @@ $("#formCheck").click(function(){
               $(".hero-title h2").fadeToggle(300);
               $('.form-content').fadeOut(300);
               $(".hero-title h2").html("Oops! Something went wrong.");
-              $(".hero-title").addClass('mx-auto');
+              $(".hero-title").removeClass('col-xl-7').addClass('mx-auto');
               $(".hero-title h2").fadeToggle(300);
            
           }
