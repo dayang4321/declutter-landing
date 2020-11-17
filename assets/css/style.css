@@ -93,14 +93,16 @@ color: var(--secondary-color)!important;
     background-color: var(--secondary-color);
 }
 
-.home-container .container-fluid{
-    max-width: 1440px!important;
-}
-
-.hero-bg{
+.hero-bg{ 
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/assets/img/png/hero.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content{
     background-size: cover;
     padding: 44px 0px 86px 0px;
+    max-width: 1440px!important;
+    
 }
 
 .clock{
@@ -178,6 +180,10 @@ margin-left: 24px;
     border-radius: 10px;
     background-color: transparent;
     border: 5px solid var(--light-color);
+}
+
+.custom-select option:not(:first-of-type){
+    color: #000000;
 }
 
 .custom-control-label::after {
