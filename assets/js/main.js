@@ -3,8 +3,8 @@
     /*Set Endtime here*/
     /*Endtime must be > current time*/
     endtimeYear: 2020,
-    endtimeMonth: 11,
-    endtimeDate: 26,
+    endtimeMonth: 12,
+    endtimeDate: 9,
     endtimeHours: 9,
     endtimeMinutes: 0,
     endtimeSeconds: 0,
