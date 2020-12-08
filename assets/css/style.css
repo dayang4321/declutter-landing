@@ -76,13 +76,12 @@ h6 {
     letter-spacing: -0.05em;
 }
 
-.navbar-brand{
-    font-size: 48px;
+.navbar-brand img{
+  width: 15vw;
+  min-width: 150px;
 }
 
-.navbar-brand span{
-    font-size: 24px;
-}
+
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:active{
