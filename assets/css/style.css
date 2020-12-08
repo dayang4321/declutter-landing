@@ -14,8 +14,8 @@
     --main-font-family: 'Roboto', Helvetica, Arial , sans-serif;
     --second-font-family: 'Public Sans','Roboto', Helvetica, Arial  sans-serif;
 
-    --h1-font-size: min(max(56px, 6.6667vw), 96px);
-    --h2-font-size: min(max(48px, 6.25vw), 90px);
+    --h1-font-size: min(max(56px, 6vw), 96px);
+    --h2-font-size: min(max(48px, 5.67vw), 90px);
     --h3-font-size: min(max(28px, 3.3333vw), 48px);
     --h4-font-size: min(max(24px, 2.5vw), 36px);
     --h5-font-size: min(max(22px, 1.9444vw), 30px);
@@ -94,7 +94,7 @@ color: var(--secondary-color)!important;
 }
 
 .hero-bg{ 
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/assets/img/png/hero.png) center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/assets/img/hero-bg.jpg) center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -103,6 +103,13 @@ color: var(--secondary-color)!important;
     padding: 44px 0px 86px 0px;
     max-width: 1440px!important;
     
+}
+
+.heading-list{
+list-style: none;
+font-weight: 700;
+text-align: right;
+font-size: var(--h5-font-size);
 }
 
 .clock{
